@@ -1,12 +1,12 @@
-# ConceptHub - Concept sharing platform Backend
+# ConceptHub - Concept sharing platform Frontend
 
-A robust Node.js and Express backend for the ConceptHub platform.
+A modern concept sharing platform built with React and Vite.
 
-## How to Run
+##  How to Run
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/Jaswant10041/backend-blog.git
+git clone https://github.com/Jaswant10041/frontend-blog.git
 
 ```
 
@@ -18,37 +18,27 @@ npm install
 ### Step 3: Create .env File
 Create a `.env` file in the root directory:
 ```
-DATABASE_URL=mongodb+srv://username:password@cluster.mongodb.net/dbname?retryWrites=true&w=majority
-JWT_SECRET=your_super_secret_jwt_key_here
-PORT=3000
-NODE_ENV=development
+VITE_API_URL=http://localhost:3000
 ```
 
-### Step 4: Whitelist Your IP on MongoDB Atlas
-1. Go to MongoDB Atlas → Network Access
-2. Click **+ ADD IP ADDRESS**
-3. Click **ALLOW ACCESS FROM ANYWHERE** (for development)
-4. Click **Confirm**
-5. Wait 1-2 minutes for changes to apply
-
-### Step 5: Start the Development Server
+### Step 4: Start Development Server
 ```bash
 npm run dev
 ```
 
-You should see:
+### Step 5: Open in Browser
 ```
-Connected to database
-Server running on port 3000
+http://localhost:5173/
 ```
 
-Done! Your backend is now running on `http://localhost:3000`
-
-## Available Commands
+##  Available Commands
 
 ```bash
 npm run dev          # Start development server
-npm start            # Start production server
+npm run build        # Build for production
+npm run preview      # Preview production build
+npm run lint         # Check code quality
 ```
 
-Done!
+Done! 
+
